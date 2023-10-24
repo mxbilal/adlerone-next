@@ -1,0 +1,110 @@
+footer {
+	background: var(--colorsGray-900, #101828);
+}
+footer .footer-upper {
+	display: flex;
+	padding: 4rem;
+	justify-content: space-between;
+	align-items: center;
+}
+footer .footer-upper .footer-content {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+footer .logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+footer .social-icons {
+	display: flex;
+	gap: 0.75rem;
+}
+footer .social-icons img {
+	filter: invert(1);
+	transition: 0.2s ease;
+	width: 24px;
+}
+footer .social-icons img:hover {
+	transform: scale(1.1);
+}
+footer .footer-lower {
+	display: flex;
+	padding: 1.5rem 4rem;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-self: stretch;
+}
+
+.footer-links-content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 6.5rem;
+}
+.footer-links-content .footer-links-content-column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+.footer-links-content
+	.footer-links-content-column
+	.footer-links-content-column-items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+.footer-links-content
+	.footer-links-content-column
+	.footer-links-content-column-items
+	a {
+	color: var(--colorsGray-200, #d1d5db);
+	text-decoration: none;
+	transition: 0.1s ease;
+}
+.footer-links-content
+	.footer-links-content-column
+	.footer-links-content-column-items
+	a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+/* mobile query */
+@media (max-width: 768px) {
+	footer .footer-upper {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		padding: 2.5rem 1.5rem;
+	}
+	footer .footer-upper .footer-content {
+		width: 100%;
+	}
+	footer .footer-upper .footer-content .social-icons {
+		display: none;
+	}
+	footer .footer-lower {
+		padding: 1.5rem;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+	}
+	footer .footer-lower p {
+		text-align: center;
+		order: 2;
+	}
+	.footer-links-content {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2.5rem;
+		width: 100%;
+		margin-top: 2rem;
+	}
+}

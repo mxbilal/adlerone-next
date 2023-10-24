@@ -1,0 +1,21 @@
+.badge {
+	display: flex;
+	padding: 0.375rem 0.875rem;
+	align-items: center;
+	gap: 0.375rem;
+	border-radius: 0.375rem;
+	background: var(--colorGray-50, #f9fafb);
+	width: fit-content;
+	margin-bottom: 1rem;
+}
+
+.badge p.badge-text {
+	color: var(--colorPrimary, #ad1a33);
+	font-family: Inter;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.125rem; /* 128.571% */
+	letter-spacing: -0.0175rem;
+	text-transform: uppercase;
+}

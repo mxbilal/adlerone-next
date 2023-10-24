@@ -1,0 +1,32 @@
+.page-header {
+	display: flex;
+	height: 75vh;
+	padding: 5rem 4rem;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6.5rem;
+	width: 100%;
+}
+.page-header .page-header-content {
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+	.page-header {
+		display: flex;
+		padding: 4rem 1rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2.5rem;
+		height: fit-content;
+		padding-bottom: 6rem;
+	}
+	.page-header .page-header-content {
+		width: 100%;
+		align-items: flex-start;
+	}
+}

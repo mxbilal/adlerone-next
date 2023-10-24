@@ -1,0 +1,10 @@
+section.thankyou {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 70vh;
+	gap: 1.5rem;
+
+	padding: 6.5rem 4rem 5rem 4rem;
+}

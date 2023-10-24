@@ -1,0 +1,109 @@
+.blog-page {
+	display: flex;
+	width: 100%;
+	padding: 2.5rem 4rem 4rem 4rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0rem;
+}
+.blog-page .main-blog-content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 3rem;
+	display: flex;
+	height: max-content;
+
+	padding: 2.5rem 4rem 4rem 4rem;
+	width: 100%;
+}
+.blog-page .main-blog-content .blog-card.big {
+	width: 55%;
+	height: 100%;
+}
+.blog-card.big img {
+	height: 100%;
+	max-height: 600px;
+}
+.blog-page .main-blog-content .main-blog-content-side {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	width: 45%;
+}
+
+.blog-page-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(300px, 3fr));
+	grid-gap: 2.5rem;
+	width: 100%;
+	/* grid-template-columns: repeat(3, 1fr); */
+
+	padding: 2.5rem 4rem 4rem 4rem;
+}
+.blog-page-grid > a {
+	text-decoration: none;
+}
+
+.all-blogs-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 3rem 4rem;
+	padding-bottom: 0rem;
+}
+.all-blogs-title .input-field {
+	width: 300px;
+}
+
+.blog-card.row img {
+	width: 100%;
+	max-width: 280px;
+	height: 100%;
+	max-height: 200px;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+	.blog-page {
+		padding: 2.5rem 1rem 4rem 1rem;
+	}
+	.blog-page .main-blog-content {
+		flex-direction: column;
+		gap: 2.5rem;
+		padding: 2.5rem 1rem 4rem 1rem;
+	}
+	.blog-page .main-blog-content .blog-card.big {
+		width: 100%;
+	}
+	.blog-page .main-blog-content .main-blog-content-side {
+		width: 100%;
+	}
+	.blog-page-grid {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 2.5rem 1rem 4rem 1rem;
+	}
+	.blog-page-grid > a {
+		text-decoration: none;
+	}
+	.all-blogs-title {
+		flex-direction: column;
+		gap: 1.5rem;
+		padding: 2.5rem 1rem 4rem 1rem;
+	}
+	.all-blogs-title .input-field {
+		width: 100%;
+	}
+	.blog-card.row {
+		flex-direction: column;
+	}
+	.blog-card.row img {
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		max-height: 200px;
+		object-fit: cover;
+	}
+}

@@ -1,0 +1,26 @@
+.ribbon {
+	width: 100%;
+}
+.ribbon-content {
+	display: flex;
+	width: 100%;
+	padding: 4rem;
+	align-items: center;
+	gap: 4rem;
+}
+.ribbon-content h3 {
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.ribbon-content {
+		padding: 4rem 1rem;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	/* .ribbon-content h3 {
+		font-size: 1.5rem;
+		line-height: 2rem; 
+		letter-spacing: -0.06rem;
+	} */
+}

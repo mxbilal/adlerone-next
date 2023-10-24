@@ -1,0 +1,13 @@
+.point {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	gap: 0.5rem;
+	align-self: stretch;
+}
+.point img.check-icon {
+	padding: 0.25rem 0rem;
+
+	width: 1.25rem;
+	height: 1.25rem;
+}

@@ -1,0 +1,15 @@
+.schedule-meeting {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	padding: 4rem;
+	padding-top: 3rem;
+	padding-bottom: 6rem;
+	width: 100%;
+}
+.calendly-inline-widget {
+	width: 100%;
+}
