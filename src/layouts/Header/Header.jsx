@@ -86,14 +86,16 @@ export default function Header() {
 							onMouseEnter={() => {
 								setServiceOpen(true);
 							}}
+							style={{ display: 'flex', gap: '3px' }}
 						>
 							Services{" "}
 							<FeatherIcon
 								icon={
 									serviceOpen ? "chevron-up" : "chevron-down"
-								}	
+								}
 								size={20}
 								className={"nav-item-chevron"}
+								style={{ marginTop: '2px' }}
 							/>
 						</div>
 						{serviceOpen && <MenuDropdown items={services} />}
@@ -148,7 +150,6 @@ export default function Header() {
 }
 
 const MenuDropdown = ({ items }) => {
-	console.log("props here", items)
 	/* const DropdownItem = () => {
 		return (
 			<div className="dropdown-item">

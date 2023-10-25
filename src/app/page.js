@@ -14,7 +14,6 @@ import "./Home.css";
 import { useParams } from "react-router-dom";
 
 export default function Home() {
-	console.log("HeroImg2", HeroImg2)
 	const [selectService, setSelectedService] = useState([]);
 
 	const { section } = useParams();

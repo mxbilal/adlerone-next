@@ -62,7 +62,6 @@ function Blogs() {
 			query = `*[_type == "post" &&  '${selectedCategory.label}' in categories[]->title]`;
 		}
 
-		console.log(query);
 
 		query += `{
 			title,

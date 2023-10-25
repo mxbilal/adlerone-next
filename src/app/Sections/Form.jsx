@@ -43,18 +43,13 @@ const HubSpotForm = ({ selectedService }) => {
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 
 	const handleFormSubmit = async (event) => {
-		//console.log("Form data:", formData);
-		//console.log("Selected values:", selectedValues);
 
 		event.preventDefault();
 
 		setFormSubmitted(true);
 
-		//console.log("Form submitted successfully");
-
 		try {
 			const response = await submitToHubSpot(formData);
-			console.log("Form submitted successfully:", response);
 
 			setErrorMessage("");
 			navigator.push("/thank-you-for-submitting");
@@ -83,7 +78,6 @@ const HubSpotForm = ({ selectedService }) => {
 			setSelectedValues([selectedServiceValue]);
 		}
 
-		//console.log(selectedValues);
 	}, [selectedService]);
 
 	return (

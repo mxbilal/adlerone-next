@@ -24,7 +24,6 @@ const SerivceCard = ({ icon, title, text, alt, serviceClicked, i, slug }) => {
 		threshold: 0.1, // Trigger when 10% of element is in view
 	});
 	const navigator = useRouter();
-	console.log("AccountingIcon", AccountingIcon)
 	return (
 		<motion.div
 			ref={inViewRef}

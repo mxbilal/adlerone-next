@@ -9,7 +9,6 @@ import "./ThankYou.css";
 export default function ThankYouForSubmitting() {
 	const navigator = useRouter();
 
-	console.log("Hello darkness");
 	return (
 		<>
 			<section className="thankyou" style={{background:'white'}}>

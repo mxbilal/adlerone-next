@@ -39,7 +39,6 @@ function BlogArticle() {
 	const [postData, setPostData] = useState(null);
 	const [loading, setLoading] = useState(true);
 	const { blog } = useParams();
-	console.log("blog", blog)
 	useEffect(() => {
 		sanityClient
 			.fetch(

@@ -16,7 +16,6 @@ const submitToHubSpot = async (formData) => {
 			pageName: document.title,
 		},
 	};
-	console.log(JSON.stringify(data));
 
 	const response = await fetch(url, {
 		method: "POST",

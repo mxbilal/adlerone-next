@@ -67,7 +67,6 @@ const Feature = ({ image, title, text, points, left, alt }) => {
 };
 
 const Features = React.forwardRef((props, ref) => {
-	// console.log("TruestedPartnersImg", TruestedPartnersImg)
 	const [inViewRef, inView] = useInView({
 		triggerOnce: true,
 		threshold: 0.1, // Trigger when 10% of element is in view
