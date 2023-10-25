@@ -11,8 +11,6 @@ import formatDate from "../../../services/formatDate";
 import SizedBox from "../../../components/SizedBox/SizedBox";
 
 import "./BlogArticle.css";
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 
 const CategoryBadge = ({ label, dark }) => {
 	return (
@@ -80,7 +78,6 @@ function BlogArticle() {
 
 	return (
 		<>
-		 	<Header />
 			{loading ? (
 				<BlogPostSkeleton />
 			) : (
@@ -122,7 +119,6 @@ function BlogArticle() {
 					</div>
 				</div>
 			)}
-			<Footer />
 		</>
 	);
 }

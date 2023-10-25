@@ -21,13 +21,10 @@ import { FeatureBlock2 } from "../../../components/CustomerSupport/CustomerSuppo
 import SizedBox from "../../../components/SizedBox/SizedBox";
 
 import { DevelopmentIcon } from "../../../assets/icons";
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 export default function Development() {
 	return (
     <>
-      <Header />
-      <div className="service-page">
+      <div className="service-page" style={{background:'white'}}>
         <PageHeader
           title={
             <>
@@ -203,7 +200,6 @@ export default function Development() {
         <OtherServices currentServiceTitle={"Development"} />
         <BlogItems category={"Development"} />
       </div>
-      <Footer />
     </>
 	);
 }

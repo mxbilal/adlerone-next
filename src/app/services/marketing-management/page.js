@@ -21,13 +21,10 @@ import { FeatureBlock2 } from "../../../components/CustomerSupport/CustomerSuppo
 import SizedBox from "../../../components/SizedBox/SizedBox";
 
 import { MarketingIcon } from "../../../assets/icons";
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 export default function MarketingManagement() {
 	return (
     <>
-      <Header />
-      <div className="service-page">
+      <div className="service-page" style={{background:'white'}}>
         <PageHeader
           title={
             <>
@@ -190,7 +187,6 @@ export default function MarketingManagement() {
         <OtherServices currentServiceTitle={"Marketing Management"} />
         <BlogItems category={"Marketing Management"} />
       </div>
-      <Footer />
     </>
 	);
 }

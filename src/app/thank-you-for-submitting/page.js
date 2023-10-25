@@ -4,8 +4,6 @@ import SizedBox from "../../components/SizedBox/SizedBox";
 import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
 import { useRouter } from 'next/navigation'
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 import "./ThankYou.css";
 
 export default function ThankYouForSubmitting() {
@@ -14,8 +12,7 @@ export default function ThankYouForSubmitting() {
 	console.log("Hello darkness");
 	return (
 		<>
-			<Header />
-			<section className="thankyou">
+			<section className="thankyou" style={{background:'white'}}>
 				<h1 className="bold gray900">
 					Thank you for submitting your information!
 				</h1>
@@ -33,7 +30,6 @@ export default function ThankYouForSubmitting() {
 					}}
 				/>
 			</section>
-			<Footer />
 		</>
 	);
 }

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import "./Header.css";
 // import { Link, useNavigate } from "react-router-dom";
@@ -75,7 +76,7 @@ export default function Header() {
 					</Link> */}
 
 					<div
-					
+
 						className="nav-item"
 						onMouseLeave={() => {
 							setServiceOpen(false);
@@ -90,7 +91,7 @@ export default function Header() {
 							<FeatherIcon
 								icon={
 									serviceOpen ? "chevron-up" : "chevron-down"
-								}
+								}	
 								size={20}
 								className={"nav-item-chevron"}
 							/>

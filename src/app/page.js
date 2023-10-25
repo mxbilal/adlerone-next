@@ -10,8 +10,6 @@ import StarFeature from "./Sections/StarFeature";
 import Features from "./Sections/Features";
 import Contact from "./Sections/Contact";
 import Testimonials from "./Sections/Testimonials";
-import Header from "../layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 import "./Home.css";
 import { useParams } from "react-router-dom";
 
@@ -49,10 +47,8 @@ export default function Home() {
 	}, [section, currentRef]);
 
 	return (
-		<div>
-			<Header />
+		<div>	
 			<Hero ref={heroRef} />
-
 			<StarFeature
 				image={HeroImg2?.src}
 				title="Setting the Gold Standard for Startup Support"
@@ -93,7 +89,6 @@ export default function Home() {
 
 			<Testimonials />
 			<Contact serviceSelected={selectService} ref={contactRef} />
-			<Footer />
 		</div>
 	);
 }

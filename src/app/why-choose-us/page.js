@@ -25,13 +25,10 @@ import SizedBox from "../../components/SizedBox/SizedBox";
 import Services from "../Sections/Services";
 
 import { WhyUsIcon } from "../../assets/icons";
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 export default function WhyUs() {
 	return (
     <>
-      <Header />
-      <div className="service-page">
+      <div className="service-page" style={{background:'white'}}>
         <PageHeader
           title={
             <>
@@ -140,7 +137,6 @@ export default function WhyUs() {
 
         <BlogItems category={"Why Us"} />
       </div>
-      <Footer />
     </>
 	);
 }

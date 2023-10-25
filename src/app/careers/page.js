@@ -21,18 +21,15 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import TextArea from "../../components/TextArea/TextArea";
 import Button from "../../components/Button/Button";
 import emailjs from "emailjs-com";
-import { storage } from "../../services/firebaseAuth";
+// import { storage } from "../../services/firebaseAuth";
 
 import { CareersIcon } from "../../assets/icons";
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 
 
 export default function Careers() {
 	return (
     <>
-      <Header />
-      <div className="career-page">
+      <div className="career-page" style={{background:'white'}}>
         <PageHeader
           title={
             <>
@@ -50,7 +47,6 @@ export default function Careers() {
         <CareersPerks />
         <InterestForm />
       </div>
-      <Footer />
     </>
 	);
 }

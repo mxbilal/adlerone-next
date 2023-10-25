@@ -25,6 +25,7 @@ import {
 } from "../../assets/images/avatars/index";
 import { TestimonialImg } from "../../assets/images";
 import applyOrder from "../../services/applyOrder";
+import Image from "next/image";
 
 const fadeUp = {
 	hidden: { opacity: 0, y: 100 },
@@ -182,7 +183,7 @@ export default function Testimonials() {
 				}}
 			>
 				<div className="testimonials-content">
-					<img
+					<Image
 						src={TestimonialImg}
 						alt=""
 						className="testimonial-img"

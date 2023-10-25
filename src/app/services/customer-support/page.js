@@ -21,13 +21,10 @@ import BlogItems from "../../../components/BlogItems/BlogItems";
 import SizedBox from "../../../components/SizedBox/SizedBox";
 
 import { CustomerSupportIcon } from "../../../assets/icons";
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
 export default function CustomerSupport() {
 	return (
     <>
-      <Header />
-      <div className="service-page">
+      <div className="service-page" style={{background:'white'}}>
         <PageHeader
           title={
             <>
@@ -185,7 +182,6 @@ export default function CustomerSupport() {
         <OtherServices currentServiceTitle={"Customer Support"} />
         <BlogItems category={"Customer Support"} />
       </div>
-      <Footer />
     </>
 	);
 }

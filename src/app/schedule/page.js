@@ -1,16 +1,12 @@
 "use client"
 import React from "react";
-import Header from "@/layouts/Header/Header";
 import "./Schedule.css";
-import Footer from "@/layouts/Footer/Footer";
 export default function Schedule() {
 	return (
 		<>
-			<Header />
-			<section className="schedule-meeting">
+			<section className="schedule-meeting" style={{background:'white'}}>
 				<CalendlyEmbed />
 			</section>
-			<Footer />
 		</>
 	);
 }
