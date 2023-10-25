@@ -15,7 +15,7 @@ import { useParams } from "react-router-dom";
 
 export default function Home() {
 	const [selectService, setSelectedService] = useState([]);
-
+	const [firstRender, setFirstRender] = useState(true);
 	const { section } = useParams();
 
 	const heroRef = useRef(null);
@@ -45,6 +45,13 @@ export default function Home() {
 		}
 	}, [section, currentRef]);
 
+	useEffect(() => {
+		setFirstRender(false);
+	}, [])
+
+	if (firstRender) {
+		return <></>
+	}
 	return (
 		<div>	
 			<Hero ref={heroRef} />
